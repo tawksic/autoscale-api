@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-import os
+from utils import get_version
 
 app = FastAPI()
 
@@ -13,4 +13,4 @@ def health_check():
 
 @app.get("/version")
 def version():
-    return {"message": "0.1.0"}
+    return {"release_version": get_version()}

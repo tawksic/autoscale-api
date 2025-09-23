@@ -1,5 +1,5 @@
 services:
   webapp:
-    build: .
+    image: harbor.tawksic.com/h-webapp/autoscale-api
     ports:
       - "80:80"
